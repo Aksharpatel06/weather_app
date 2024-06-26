@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/view/controller/weather_provider.dart';
 import 'package:weather_app/view/screen/home/home_screen.dart';
+import 'package:weather_app/view/screen/weather/weather_screen.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     WeatherProvider weatherProviderTrue = Provider.of<WeatherProvider>(context);
 
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(weatherProvider: weatherProviderTrue,),
+      home:WeatherScreen(weatherProvider: weatherProviderTrue,),
     );
   }
 }

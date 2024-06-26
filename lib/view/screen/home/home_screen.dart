@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:glassmorphism/glassmorphism.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/view/controller/weather_provider.dart';
 
@@ -30,17 +28,21 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                wetherAppBar(width),
-                weatherImage(height,weatherProvider),
-                glassmorphicContainerTemp(height, width,weatherProvider),
-                reportButton(height, width),
-              ],
-            ),
-          ),
+          child: (weatherProvider.weather == null)
+              ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+              : Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      wetherAppBar(width),
+                      weatherImage(height, weatherProvider),
+                      glassmorphicContainerTemp(height, width, weatherProvider),
+                      reportButton(height, width),
+                    ],
+                  ),
+                ),
         ),
       ),
     );
