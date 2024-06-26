@@ -1,6 +1,7 @@
 class CurrentModal {
   final int lastUpdatedEpoch;
   final String lastUpdated;
+  final dynamic isDay;
   final double tempC;
   final double tempF;
   final double windKph;
@@ -29,6 +30,7 @@ class CurrentModal {
   final ConditionModel conditionModel;
 
   CurrentModal({
+    required this.isDay,
     required this.conditionModel,
     required this.lastUpdatedEpoch,
     required this.lastUpdated,
@@ -62,6 +64,7 @@ class CurrentModal {
   factory CurrentModal.fromJson(Map<String, dynamic> json) {
     return CurrentModal(
       conditionModel: ConditionModel.getData(json['condition']),
+      isDay: json['is_day'],
       lastUpdatedEpoch: json['last_updated_epoch'],
       lastUpdated: json['last_updated'],
       tempC: json['temp_c'],

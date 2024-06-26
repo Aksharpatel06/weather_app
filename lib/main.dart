@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:WeatherScreen(weatherProvider: weatherProviderTrue,),
+      home:HomeScreen(weatherProvider: weatherProviderTrue,),
     );
   }
 }

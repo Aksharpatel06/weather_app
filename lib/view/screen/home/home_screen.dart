@@ -20,15 +20,24 @@ class HomeScreen extends StatelessWidget {
         Provider.of<WeatherProvider>(context, listen: false);
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment(-0.21, -0.98),
-            end: Alignment(0.21, 0.98),
-            colors: [Color(0xFF47BFDF), Color(0xFF4A91FF)],
-          ),
+        decoration: BoxDecoration(
+          gradient: (weatherProvider.weather!.currentModal.isDay == 1)
+              ? const LinearGradient(
+                  begin: Alignment(-0.21, -0.98),
+                  end: Alignment(0.21, 0.98),
+                  colors: [Color(0xFF47BFDF), Color(0xFF4A91FF)],
+                )
+              : const LinearGradient(
+                  begin: Alignment(-0.21, -0.98),
+                  end: Alignment(0.21, 0.98),
+                  colors: [
+                    Color(0xff142058),
+                    Color(0xff454DB7),
+                  ],
+                ),
         ),
         child: SafeArea(
-          child: (weatherProvider.weather == null)
+          child: (weatherProvider.weather == null || weatherProvider.list.isEmpty)
               ? const Center(
                   child: CircularProgressIndicator(),
                 )
@@ -36,10 +45,10 @@ class HomeScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     children: [
-                      wetherAppBar(width),
+                      wetherAppBar(width,context),
                       weatherImage(height, weatherProvider),
                       glassmorphicContainerTemp(height, width, weatherProvider),
-                      reportButton(height, width),
+                      reportButton(height, width, weatherProvider, context),
                     ],
                   ),
                 ),

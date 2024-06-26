@@ -6,7 +6,7 @@ Column weatherImage(double height,WeatherProvider weatherProvider) {
   return Column(
     children: [
       SizedBox(
-        height: height * 0.05,
+        height: height * 0.03,
       ),
       Padding(
         padding: const EdgeInsets.all(12.0),
