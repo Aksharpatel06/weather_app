@@ -1,16 +1,66 @@
-# weather_app
 
-A new Flutter project.
+# Weather App
 
-## Getting Started
+## Description
+This Flutter application allows users to check weather information for different locations around the world. It integrates with a weather API to fetch real-time weather data.
 
-This project is a starting point for a Flutter application.
+## Features
+- **Current Weather:** Displays current temperature, weather conditions, and other relevant details.
+- **Location Search:** Users can search for weather information by city or location.
+- **Multiple Locations:** Supports viewing weather for different cities or countries.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/weather-app.git
+   ```
+2. Navigate to the project directory and install dependencies:
+   ```
+   cd weather-app
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## API Access
+To fetch weather data, the app utilizes the [Weather API](https://weatherapi.com/) service. You need to obtain an API key by signing up on their website.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Configuration
+1. Get your API key from Weather API.
+2. Create a `.env` file in the root directory of the project.
+3. Add your API key to the `.env` file:
+   ```
+   API_KEY=your_api_key_here
+   ```
+
+## Usage
+Run the app on your simulator or device:
+   ```
+   flutter run
+   ```
+
+## Changing Countries
+To change the country for weather information:
+1. Open the app.
+2. Navigate to the settings or location search screen.
+3. Enter the name of the country or select from the available options.
+4. View the weather details for the selected country.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+
+
+### ScreenShorts [Source Code](https://github.com/Aksharpatel06/weather_app/tree/master/lib)
+
+
+<p align='center'>
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/78bca7b4-5ec2-45e6-bba7-745bff060c35' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/c6010905-7063-4566-b339-31dc6fa93bc5' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/7cad5f5b-3445-4c03-aac4-e9ca7a7a992f' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/b90a5f73-c62b-419c-ae2a-5d86ccfaf26d' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/c17f89d7-6562-40e2-9e10-1c88475e9782' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='https://github.com/Aksharpatel06/weather_app/assets/143181114/4e976dbd-f311-4ea5-9aab-a2dd8bbf88a4' width=240> &nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+### video
+
+https://github.com/Aksharpatel06/weather_app/assets/143181114/d9508dfb-d27d-49b3-a1b4-b3495a789ef9
+
