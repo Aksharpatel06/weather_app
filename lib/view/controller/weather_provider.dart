@@ -8,14 +8,14 @@ import '../modal/sreach_modal.dart';
 class WeatherProvider extends ChangeNotifier {
   Weather? weather;
   DateTime dateTime = DateTime.now();
-  String name = 'surat';
+  String name ='surat';
   String? isClicked;
   TextEditingController textEditingController = TextEditingController(text: 'surat');
   List<Location> list = [];
 
   WeatherProvider() {
-    fetchData();
     getData();
+    fetchData();
   }
 
   Future<void> fetchData() async {
@@ -49,7 +49,7 @@ class WeatherProvider extends ChangeNotifier {
 
   Future<void> setData() async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    preferences.setString('isClicked', name);
+    preferences.setString('isClicked', '');
     notifyListeners();
   }
 
