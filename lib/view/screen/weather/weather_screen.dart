@@ -37,15 +37,17 @@ class WeatherScreen extends StatelessWidget {
                 ),
         ),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                appBarToday(width, context),
-                todayTimeTemp(height, weatherProvider),
-                nextForecasts(height, weatherProvider),
-                accuWeather(width),
-              ],
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  appBarToday(width, context),
+                  todayTimeTemp(height, weatherProvider),
+                  nextForecasts(height, weatherProvider),
+                  accuWeather(width),
+                ],
+              ),
             ),
           ),
         ),

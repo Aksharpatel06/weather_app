@@ -11,8 +11,8 @@ Widget glassmorphicContainerTemp(double height, double width,WeatherProvider wea
   return Column(
     children: [
       GlassmorphicContainer(
-        width: 350,
-        height: 350,
+        width: double.infinity,
+        height: height*0.45,
         borderRadius: 20,
         blur: 20,
         padding: const EdgeInsets.all(40),
@@ -45,7 +45,7 @@ Widget glassmorphicContainerTemp(double height, double width,WeatherProvider wea
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: height * 0.02,
+                height: height * 0.015,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -55,14 +55,14 @@ Widget glassmorphicContainerTemp(double height, double width,WeatherProvider wea
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: 18),
+                        fontSize: 16),
                   ),
                   Text(
                     "${weatherProvider.dateTime.day} June",
                     style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
-                        fontSize: 18),
+                        fontSize: 16),
                   ),
                 ],
               ),
@@ -72,12 +72,12 @@ Widget glassmorphicContainerTemp(double height, double width,WeatherProvider wea
                 children: [
                   Padding(
                     padding:
-                    const EdgeInsets.only(top: 16.0),
+                    const EdgeInsets.only(top: 12.0),
                     child: Text(
                       weatherProvider.weather!.currentModal.tempC
                           .toString(),
                       style: GoogleFonts.overpass(
-                          color: Colors.white, fontSize: 100),
+                          color: Colors.white, fontSize: 95),
                     ),
                   ),
                   Padding(
@@ -168,7 +168,7 @@ Widget glassmorphicContainerTemp(double height, double width,WeatherProvider wea
         ),
       ),
       SizedBox(
-        height: height * 0.05,
+        height: height * 0.032,
       ),
     ],
   );

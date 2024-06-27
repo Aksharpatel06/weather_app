@@ -13,13 +13,13 @@ Column nextForecasts(double height,WeatherProvider weatherProvider) {
           Text(
             'Next Forecast',
             style: GoogleFonts.overpass(
-                fontSize: 22,
+                fontSize: 20,
                 color: Colors.white,
                 fontWeight: FontWeight.w800),
           ),
           const Icon(
             Icons.calendar_month_rounded,
-            size: 25,
+            size: 22,
             color: Colors.white,
           )
         ],
@@ -72,7 +72,7 @@ Row nextForecast(int index,WeatherProvider weatherProvider,int temp,int imageInd
         child: Text(
           weatherProvider.dateTime.day+index+1<=30?'Jun,${weatherProvider.dateTime.day+index+1}':'Jul,0${(weatherProvider.dateTime.day+index+1)%30}',
           style: GoogleFonts.overpass(
-              fontSize: 18,
+              fontSize: 16,
               color: Colors.white,
               fontWeight: FontWeight.w500),
         ),
@@ -81,7 +81,7 @@ Row nextForecast(int index,WeatherProvider weatherProvider,int temp,int imageInd
       Text(
         '$temp°',
         style: GoogleFonts.overpass(
-            fontSize: 18,
+            fontSize: 16,
             color: Colors.white,
             fontWeight: FontWeight.w500),
       ),

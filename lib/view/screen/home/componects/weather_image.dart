@@ -19,7 +19,7 @@ Column weatherImage(double height,WeatherProvider weatherProvider) {
         ),
       ),
       SizedBox(
-        height: height * 0.05,
+        height: height * 0.03,
       ),
     ],
   );

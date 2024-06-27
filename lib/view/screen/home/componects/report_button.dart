@@ -35,7 +35,7 @@ Widget reportButton(double height, double width,WeatherProvider weatherProvider,
                 'Forecast report',
                 style: TextStyle(
                   color: Color(0xFF444D71),
-                  fontSize: 18,
+                  fontSize: 16,
                   fontFamily: 'Overpass',
                   fontWeight: FontWeight.w400,
                   height: 0,

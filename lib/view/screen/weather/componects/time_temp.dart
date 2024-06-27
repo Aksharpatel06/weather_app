@@ -14,14 +14,14 @@ Column todayTimeTemp(double height,WeatherProvider weatherProvider) {
           Text(
             'Today',
             style: GoogleFonts.overpass(
-                fontSize: 22,
+                fontSize: 20,
                 color: Colors.white,
                 fontWeight: FontWeight.w800),
           ),
           Text(
             'Jun,${weatherProvider.dateTime.day}',
             style: GoogleFonts.overpass(
-                fontSize: 20,
+                fontSize: 18,
                 color: Colors.white,
                 fontWeight: FontWeight.w400),
           )
@@ -106,7 +106,7 @@ Column timeAndTemp(double height, String temp, Image image, String name) {
       Text(
         temp,
         style: GoogleFonts.overpass(
-          fontSize: 18,
+          fontSize: 16,
           color: Colors.white,
           fontWeight: FontWeight.w400,
         ),
@@ -121,7 +121,7 @@ Column timeAndTemp(double height, String temp, Image image, String name) {
       Text(
         "$name:00",
         style: GoogleFonts.overpass(
-          fontSize: 18,
+          fontSize: 16,
           color: Colors.white,
           fontWeight: FontWeight.w400,
         ),

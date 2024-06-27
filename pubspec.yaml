@@ -39,8 +39,7 @@ dependencies:
   provider: ^6.1.2
   glassmorphism: ^3.0.0
   google_fonts: ^6.2.1
-
-
+  shared_preferences: any
 
 dev_dependencies:
   flutter_test:
