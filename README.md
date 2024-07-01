@@ -67,3 +67,4 @@ https://github.com/Aksharpatel06/weather_app/assets/143181114/d9508dfb-d27d-49b3
 ### Full Screen Video
 
 https://github.com/Aksharpatel06/weather_app/assets/143181114/7bbe53f0-6ae1-4fbe-9c28-c9cdfb1c1cae
+
