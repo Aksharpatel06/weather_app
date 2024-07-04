@@ -9,6 +9,7 @@ This Flutter application allows users to check weather information for different
 - **Location Search:** Users can search for weather information by city or location.
 - **Multiple Locations:** Supports viewing weather for different cities or countries.
 
+
 ## Installation
 1. Clone the repository:
    ```
